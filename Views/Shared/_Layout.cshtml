@@ -6,6 +6,8 @@
     <title>@ViewData["Title"] - Assignment5</title>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
 </head>
 <body>
     <div class="bg-dark text-white p-2">
@@ -13,10 +15,41 @@
             Sell Your Books!
         </span>
     </div>
+    <!--Bootstrap hidden-->
+    <div class="container">
+        <p>Click on the button to view information of this site.</p>
+        <button type="button" class="btn btn-info" data-toggle="collapse" data-target="#demo">About</button>
+        <div id="demo" class="collapse">
+            This website is designed to help you buy and sell books! This website is Amazon 2.0
+        </div>
+    </div>
+
     <div class="row m-1 p-1">
         <div id="test" class="col-2">
-             <h1>Books for sale</h1>
+            <h1>Books for sale</h1>
         </div>
+        <!--Boostrap dropdown-->
+        <div class="container">
+            <div class="dropdown">
+                <button class="btn btn-primary dropdown-toggle" type="button" data-toggle="dropdown">
+                    Delivery Method
+                    <span class="caret"></span>
+                </button>
+                <ul class="dropdown-menu">
+                    <li>Shipped</li>
+                    <li>Pickup</li>
+                    <li>PDF</li>
+                </ul>
+            </div>
+        </div>
+        <!--Boostrap jumbotron-->
+        <div class="container">
+            <div class="jumbotron">
+                <h1>Popular Books</h1>
+                <p>Here are the most popular books for sale.</p>
+            </div>
+        </div>
+
         <div class="col-10">
             @RenderBody()
         </div>
