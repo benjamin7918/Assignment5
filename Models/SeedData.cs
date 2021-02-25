@@ -31,7 +31,8 @@ namespace Assignment5.Models
                             Publisher = "Signet",
                             ISBN = "978-0451419439",
                             Classification = "Fiction, Classic",
-                            Price = 9.95
+                            Price = 9.95,
+                            PageNumbers = 1488
                         },
 
                         new Project
@@ -41,7 +42,8 @@ namespace Assignment5.Models
                             Publisher = "Simon & Schuster",
                             ISBN = "978-0743270755",
                             Classification = "Non-Fiction, Biography",
-                            Price = 14.58
+                            Price = 14.58,
+                            PageNumbers = 944
                         },
 
                         new Project
@@ -51,7 +53,8 @@ namespace Assignment5.Models
                             Publisher = "Bantam",
                             ISBN = "978-0553384611",
                             Classification = "Non-Fiction, Biography",
-                            Price = 21.54
+                            Price = 21.54,
+                            PageNumbers = 832
                         },
 
                         new Project
@@ -61,7 +64,8 @@ namespace Assignment5.Models
                             Publisher = "Random House",
                             ISBN = "978-0812981254",
                             Classification = "Non-Fiction, Biography",
-                            Price = 11.61
+                            Price = 11.61,
+                            PageNumbers = 864
                         },
 
                         new Project
@@ -71,7 +75,8 @@ namespace Assignment5.Models
                             Publisher = "Random House",
                             ISBN = "978-0812974492",
                             Classification = "Non-Fiction, Historical",
-                            Price = 13.33
+                            Price = 13.33,
+                            PageNumbers = 528
                         },
 
                         new Project
@@ -81,7 +86,8 @@ namespace Assignment5.Models
                             Publisher = "Vintage",
                             ISBN = "978-0804171281",
                             Classification = "Fiction, Historical Fiction",
-                            Price = 15.95
+                            Price = 15.95,
+                            PageNumbers = 288
                         },
 
                         new Project
@@ -91,7 +97,8 @@ namespace Assignment5.Models
                             Publisher = "Grand Central Publishing",
                             ISBN = "978-1455586691",
                             Classification = "Non-Fiction, Self-Help",
-                            Price = 14.99
+                            Price = 14.99,
+                            PageNumbers = 304
                         },
 
                         new Project
@@ -101,7 +108,8 @@ namespace Assignment5.Models
                             Publisher = "Grand Central Publishing",
                             ISBN = "978-1455523023",
                             Classification = "Non-Fiction, Self-Help",
-                            Price = 21.66
+                            Price = 21.66,
+                            PageNumbers = 240
                         },
 
                         new Project
@@ -111,7 +119,8 @@ namespace Assignment5.Models
                             Publisher = "Portfolio",
                             ISBN = "978-1591847984",
                             Classification = "Non-Fiction, Business",
-                            Price = 29.16
+                            Price = 29.16,
+                            PageNumbers = 400
                         },
 
                         new Project
@@ -121,7 +130,8 @@ namespace Assignment5.Models
                             Publisher = "Bantam",
                             ISBN = "978-0553393613",
                             Classification = "Fiction, Thrillers",
-                            Price = 15.03
+                            Price = 15.03,
+                            PageNumbers = 642
                         }
 
 
