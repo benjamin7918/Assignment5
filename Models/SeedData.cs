@@ -132,6 +132,39 @@ namespace Assignment5.Models
                             Classification = "Fiction, Thrillers",
                             Price = 15.03,
                             PageNumbers = 642
+                        },
+
+                        new Project
+                        {
+                            Title = "Book of Mormon",
+                            Author = "God",
+                            Publisher = "The Church of Jesus Christ of Latter-day Saints",
+                            ISBN = "978-0530829500",
+                            Classification = "Religous, Historical",
+                            Price = 3.10,
+                            PageNumbers = 531
+                        },
+
+                        new Project
+                        {
+                            Title = "The Great Gatsby",
+                            Author = "F. Scott Fitzgerald",
+                            Publisher = "Charles Scribner's Sons",
+                            ISBN = "978-0743273565",
+                            Classification = "Fiction, Tragedy",
+                            Price = 4.79,
+                            PageNumbers = 218
+                        },
+
+                        new Project
+                        {
+                            Title = "The Ferguson Rifle",
+                            Author = "Louis L'Amour",
+                            Publisher = "Bantam",
+                            ISBN = "978-0804126618",
+                            Classification = "Western, Fiction",
+                            Price = 4.49,
+                            PageNumbers = 240
                         }
 
 
