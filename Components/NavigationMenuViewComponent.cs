@@ -15,9 +15,14 @@ namespace Assignment5.Components
         {
             repository = r;
         }
-        public string Invoke()
+        public IViewComponentResult Invoke()
         {
-            return "This worked";
+            ViewBag.SelectType = RouteData?.Values["category"];
+
+            return View(repository.Projects
+                .Select(x => x.Classification)
+                .Distinct()
+                .OrderBy(x => x));
         }
     }
 }

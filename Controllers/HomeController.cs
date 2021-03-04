@@ -38,7 +38,8 @@ namespace Assignment5.Controllers
                     {
                         CurrentPage = page,
                         ItemsPerPage = PageSize,
-                        TotalNumItems = _repository.Projects.Count()
+                        TotalNumItems = category == null ?_repository.Projects.Count() :
+                            _repository.Projects.Where (x => x.Classification == category).Count()
                     },
                     Type = category
             });
