@@ -141,7 +141,7 @@ namespace Assignment5.Models
                             Publisher = "The Church of Jesus Christ of Latter-day Saints",
                             ISBN = "978-0530829500",
                             Classification = "Religous, Historical",
-                            Price = 5.11,
+                            Price = 3.10,
                             PageNumbers = 531
                         },
 

@@ -57,8 +57,19 @@ namespace Assignment5
 
             app.UseEndpoints(endpoints =>
             {
-                endpoints.MapControllerRoute(
-                    "pagination",
+                endpoints.MapControllerRoute("catpage",
+                    "{category}/{page:int}",
+                    new {controller = "Home", action = "Index" });
+
+                endpoints.MapControllerRoute("page",
+                    "{page:int}",
+                    new { controller = "Home", action = "Index" });
+
+                endpoints.MapControllerRoute("category",
+                    "{category}",
+                    new { controller = "Home", action = "Index", page = 1 });
+
+                endpoints.MapControllerRoute("pagination",
                     "P{page}",
                     new { controller = "Home", action = "Index" });
 
