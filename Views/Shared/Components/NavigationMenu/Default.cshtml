@@ -5,6 +5,8 @@
     Home
 </a>
 
+<!--This is where we highlight the category-->
+
 @foreach (string category in Model)
 {
     <a class=" btn btn-block @(category == ViewBag.SelectType ? "btn-primary" : "btn-outline-secondary")"

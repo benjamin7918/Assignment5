@@ -15,6 +15,7 @@ namespace Assignment5.Models
         {
             BooksDbContext context = application.ApplicationServices.CreateScope().ServiceProvider.GetRequiredService<BooksDbContext>();
 
+            //This if checks if there are any pending migrations
             if(context.Database.GetPendingMigrations().Any())
             {
                 context.Database.Migrate();
@@ -24,6 +25,7 @@ namespace Assignment5.Models
             {
                 context.Projects.AddRange(
 
+                    //This is where the data is created for each book
                         new Project
                         {
                             Title = "Les Miserable",

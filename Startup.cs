@@ -55,6 +55,8 @@ namespace Assignment5
 
             app.UseAuthorization();
 
+            //This is where we create the endpoints to update the URL to be more friendly
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute("catpage",

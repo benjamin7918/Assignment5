@@ -16,6 +16,7 @@ namespace Assignment5.Controllers
 
         private IBookRepository _repository;
 
+        //This is where we determine the # of books per page
         public int PageSize = 5;
 
         public HomeController(ILogger<HomeController> logger, IBookRepository repository)
@@ -26,6 +27,7 @@ namespace Assignment5.Controllers
 
         public IActionResult Index(string category, int page = 1)
         {
+            //This is where the view is added and the logic behind what is returned
             return View(new ProjectListViewModel
             {
                 Projects = _repository.Projects

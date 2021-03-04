@@ -11,6 +11,7 @@ using System.Threading.Tasks;
 
 namespace Assignment5.Infrastructure
 {
+    //This is where we create the different tag helpers
     [HtmlTargetElement("div", Attributes = "page-model")]
     public class PageLinkTagHelper : TagHelper
     {
@@ -28,6 +29,8 @@ namespace Assignment5.Infrastructure
         public string PageAction { get; set; }
 
         [HtmlAttributeName(DictionaryAttributePrefix = "page-url-")]
+
+        //Create the dictionary that will dynamically create the URL
         public Dictionary<string, object> PageUrlValues { get; set; } = new Dictionary<string, object>();
 
         public bool PageClassesEnabled { get; set; } = false;

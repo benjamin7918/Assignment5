@@ -2,6 +2,7 @@
 
 namespace Assignment5.Migrations
 {
+    //This is where the Initial migration is created and connected to sqlite
     public partial class Initial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
