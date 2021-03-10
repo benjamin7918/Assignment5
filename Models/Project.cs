@@ -16,7 +16,7 @@ namespace Assignment5.Models
         [RegularExpression(@"^\(?([0-9]{3}-)\)?[-. ]?([0-9]{10})[-. ]?$", ErrorMessage = "Not a valid ISBN")]
         public string ISBN { get; set; }
         public string Classification {get; set;}
-        public double Price { get; set; }
+        public decimal Price { get; set; }
         public int PageNumbers { get; set; }
 
     }
