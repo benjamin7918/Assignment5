@@ -25,7 +25,7 @@ namespace Assignment5.Controllers
             _repository = repository;
         }
 
-        public IActionResult Index(string category, int page = 1)
+        public IActionResult Index(string category, int pageNum = 1)
         {
             //This is where the view is added and the logic behind what is returned
             return View(new ProjectListViewModel
@@ -33,12 +33,12 @@ namespace Assignment5.Controllers
                 Projects = _repository.Projects
                 .Where(p => category == null || p.Classification == category)
                     .OrderBy(p => p.BookId)
-                    .Skip((page - 1) * PageSize)
+                    .Skip((pageNum - 1) * PageSize)
                     .Take(PageSize)
                     ,
                     PageInfo = new PageInfo
                     {
-                        CurrentPage = page,
+                        CurrentPage = pageNum,
                         ItemsPerPage = PageSize,
                         TotalNumItems = category == null ?_repository.Projects.Count() :
                             _repository.Projects.Where (x => x.Classification == category).Count()
